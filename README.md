@@ -12,7 +12,7 @@ TailWindCSS の理解のために作成した、ポートフォリオのサン�
 
 * tailwindcss: 3.2.7
 
-# Installation
+# Usage
 
 ```bash
 git clone https://github.com/Yucca1/tailwind_sandbox.git

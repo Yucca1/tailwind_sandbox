@@ -1,0 +1,49 @@
+{
+    "settingsSync.ignoredSettings": [
+    
+
+
+
+    ],
+    "editor.minimap.enabled": false, //テキスト全体の縮小表示画面の非表示
+    "editor.renderWhitespace": "all", //半角スペースの可視化
+    "files.trimTrailingWhitespace": true, //不要スペースの自動削除
+    "vim.leader": "<space>", //ほかのキーと組み合わせて様々なコマンドを実行できるようにする
+    "vim.useSystemClipboard":true, // vimでyankしたものがクリップボードに保存される
+    "vim.hlsearch": true, //検索結果のハイライト表示
+    "vim.easymotion":true, //easymotionの有効化
+    "vim.easymotionKeys": "sdfghjkl",
+    "vim.visualstar": true, //Visualモードで*や#で選択中の単語を検索できるようにする。
+    "vim.useCtrlKeys": true, //VimキーバインドでもCtrlを使えるようにする設定
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "terminal.integrated.tabs.enabled": true, //柔軟にターミナルとエディターを混在させられる機能
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "editor.indentSize": "tabSize",
+    "[vue]": {
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "workbench.startupEditor": "none",
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Cobalt2",
+}

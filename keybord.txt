@@ -1,0 +1,114 @@
+// Place your key bindings in this file to override the defaults
+[
+    // 実装箇所へ移動
+    {
+      "key": "ctrl+w ctrl+i",
+      "command": "editor.action.goToImplementation",
+      "when": "editorFocus"
+    },
+    // 宣言箇所へ移動
+    {
+      "key": "ctrl+w ctrl+d",
+      "command": "editor.action.goToDeclaration",
+      "when": "editorFocus"
+    },
+    // 左のタブへ移動
+    {
+      "key": "ctrl+w ctrl+h",
+      "command": "workbench.action.previousEditor",
+      "when": "editorFocus"
+    },
+          // 右のタブへ移動
+    {
+      "key": "ctrl+w ctrl+l",
+      "command": "workbench.action.nextEditor",
+      "when": "editorFocus && vim.mode == 'Normal'"
+    },
+    //----------------------------------------------------------
+    // vscodeのeditorとterminal切り替え
+    //----------------------------------------------------------
+    {
+      "key":"ctrl+j",
+      "command": "workbench.action.terminal.focus",
+      "when": "editorTextFocus"
+    },
+    {
+      "key":"ctrl+j",
+      "command": "workbench.action.focusFirstEditorGroup",
+      "when": "terminalFocus"
+    },
+    //----------------------------------------------------------
+    // vscodeのterminal開閉
+    //----------------------------------------------------------
+    {
+      "key": "ctrl+alt+j",
+      "command": "workbench.action.togglePanel"
+    },
+    {
+      "key": "ctrl+j",
+      "command": "-workbench.action.togglePanel"
+    },
+    //----------------------------------------------------------
+    // ジャンプした後、元の位置に戻る
+    //----------------------------------------------------------
+    {
+      "key": "ctrl+w ctrl+b",
+      "command": "workbench.action.navigateBack",
+      "when": "canNavigateBack"
+    },
+    {
+      "key": "alt+left",
+      "command": "-workbench.action.navigateBack",
+      "when": "canNavigateBack"
+    },
+    //----------------------------------------------------------
+    // ターミナルでペイン移動
+    //----------------------------------------------------------
+    {
+      "key": "ctrl+w ctrl+h",
+      "command": "workbench.action.terminal.focusPreviousPane",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "alt+left",
+      "command": "-workbench.action.terminal.focusPreviousPane",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "ctrl+w ctrl+k",
+      "command": "workbench.action.terminal.focusPreviousPane",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "alt+up",
+      "command": "-workbench.action.terminal.focusPreviousPane",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "ctrl+w ctrl+l",
+      "command": "workbench.action.terminal.focusNextPane",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "alt+right",
+      "command": "-workbench.action.terminal.focusNextPane",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "ctrl+w ctrl+j",
+      "command": "workbench.action.terminal.focusNextPane",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+      "key": "alt+down",
+      "command": "-workbench.action.terminal.focusNextPane",
+      "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    //----------------------------------------------------------
+    // ウィンドウ閉じるショートカットの無効化（エクスプローラーのショートカットと誤タイプ防止）
+    //----------------------------------------------------------
+    {
+      "key": "ctrl+shift+w",
+      "command": "-workbench.action.closeWindow"
+    }
+]
